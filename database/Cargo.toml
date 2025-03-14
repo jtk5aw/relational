@@ -1,0 +1,17 @@
+[package]
+name = "database"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+capnp = "0.20" 
+byteorder = "1"
+memoffset = "0.9"
+struct_layout = { path = "../struct_layout" }
+
+[build-dependencies]
+capnpc = "0.20"
+
+[[bin]]
+name = "test_capnp"  # The name of your executable
+path = "src/bin/test.rs"

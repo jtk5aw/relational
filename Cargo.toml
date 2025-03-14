@@ -1,0 +1,4 @@
+[workspace]
+members = [
+    "database", "struct_layout", "struct_layout_example",
+]
